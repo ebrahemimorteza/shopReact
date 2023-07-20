@@ -1,0 +1,2345 @@
+<!-- #region(collapsed) navbar  -->
+<nav class="navbar fixed-top navbar-dark bg-secondary top_navbar py-0">
+    <div class="container-fluid h-100 pe-0">
+
+        <div class="right_content h-100 py-1 bg-dark">
+            <a class="navbar-brand h-100" href="/">
+                <img src="/assets/images/logo.png" class="h-100">
+            </a>
+            <div class="form-check form-switch mx-4 d-none d-md-block">
+                <input id="handle_toggle_sidemenu" class="form-check-input pointer" type="checkbox" id="flexSwitchCheckChecked">
+            </div>
+        </div>
+
+        <div class="left_content d-flex flex-row-reverse">
+            <i class="fas fa-grip-vertical fa-2x me-3 pointer" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></i>
+            <ul class="dropdown-menu mini_menu" aria-labelledby="dropdownMenuButton1">
+                <li class="my-2"><a class="dropdown-item d-block text-center">قاسم بساکی</a></li>
+                <li class="my-2 d-flex justify-content-center align-items-center px-2">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <a class="dropdown-item" href="#">داشبورد</a>
+                </li>
+                <li class="my-2 d-flex justify-content-center align-items-center px-2">
+                    <i class="fas fa-paper-plane"></i>
+                    <a class="dropdown-item" href="#">تیکت ها</a>
+                </li>
+                <li class="my-2 d-flex justify-content-center align-items-center px-2">
+                    <i class="fas fa-envelope"></i>
+                    <a class="dropdown-item" href="#">پیام ها</a>
+                </li>
+                <hr/>
+                <li class="d-flex justify-content-center align-items-center px-2">
+                    <i class="fas fa-power-off"></i>
+                    <a class="dropdown-item" href="#">خروج</a>
+                </li>
+            </ul>
+            <i class="far fa-bell fa-2x mx-3 pointer position-relative">
+                    <span class="alarm_count">4</span>
+                </i>
+            <i class="fas fa-search fa-2x mx-3 pointer"></i>
+        </div>
+
+    </div>
+</nav>
+<!-- #endregion  -->
+
+<!-- #region(collapsed) sidebar start -->
+<section id="sidebar_section">
+    <div class="mini_sidebar collapsedd bg-dark h-100">
+        <ul class="p-0 m-0">
+            <li class="pt-1 pb-2 d-flex flex-column avatar_li position-relative">
+                <span class="avatar_box">
+                        <img class="w-100 rounded-circle" src="/assets/images/avatar/user2.jpg">
+                    </span>
+                <div class="sidebar_avatar_name text-center hiddenable">قاسم بساکی</div>
+            </li>
+            <li class="py-1 text-start pe-4 sidebar_menu_item mt-2 active" data-section-id="dashboard_section">
+                <i class="ms-3 icon fas fa-tachometer-alt text-light"></i>
+                <span class="hiddenable no_wrap font_08">داشبورد</span>
+            </li>
+            <!-- =================================== -->
+            <li class="py-1 text-start d-flex justify-content-center no_pointer no_hover ">
+                <span class="hiddenable no_wrap group_sidebar_title">فروشگاه</span>
+            </li>
+            <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_product_category">
+                <i class="ms-3 icon fas fa-stream text-light"></i>
+                <span class="hiddenable no_wrap font_08">مدیریت گروه محصول</span>
+            </li>
+            <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_product_section">
+                <i class="ms-3 icon fas fa-cube text-light"></i>
+                <span class="hiddenable no_wrap font_08">مدیریت محصول</span>
+            </li>
+            <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_brand_section">
+                <i class="ms-3 icon fas fa-copyright text-light"></i>
+                <span class="hiddenable no_wrap font_08">مدیریت برند ها</span>
+            </li>
+            <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_guarantee_section">
+                <i class="ms-3 icon fab fa-pagelines text-light"></i>
+                <span class="hiddenable no_wrap font_08">مدیریت گارانتی ها</span>
+            </li>
+            <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_color_section">
+                <i class="ms-3 icon fas fa-palette text-light"></i>
+                <span class="hiddenable no_wrap font_08">مدیریت رنگ ها</span>
+            </li>
+            <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_discount_section">
+                <i class="ms-3 icon fas fa-percentage text-light"></i>
+                <span class="hiddenable no_wrap font_08">مدیریت تخفیف ها</span>
+            </li>
+            <!-- =================================== -->
+            <li class="py-1 text-start d-flex justify-content-center no_pointer no_hover ">
+                <span class="hiddenable no_wrap group_sidebar_title">سفارشات و سبد</span>
+            </li>
+            <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_cart_section">
+                <i class="ms-3 icon fas fa-shopping-basket text-light"></i>
+                <span class="hiddenable no_wrap font_08">مدیریت سبد ها</span>
+            </li>
+            <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_orders_section">
+                <i class="ms-3 icon fas fa-luggage-cart text-light"></i>
+                <span class="hiddenable no_wrap font_08">مدیریت سفارشات</span>
+            </li>
+            <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_deliveries_section">
+                <i class="ms-3 icon fas fa-truck-loading text-light"></i>
+                <span class="hiddenable no_wrap font_08">مدیریت نحوه ارسال</span>
+            </li>
+            <!-- =================================== -->
+            <li class="py-1 text-start d-flex justify-content-center no_pointer no_hover ">
+                <span class="hiddenable no_wrap group_sidebar_title ">کاربران و همکاران</span>
+            </li>
+            <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_user_section">
+                <i class="ms-3 icon fas fa-users text-light"></i>
+                <span class="hiddenable no_wrap font_08">مشاهده کاربران</span>
+            </li>
+            <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_role_section">
+                <i class="ms-3 icon fas fa-user-tag text-light"></i>
+                <span class="hiddenable no_wrap font_08">نقش ها</span>
+            </li>
+            <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_permission_section">
+                <i class="ms-3 icon fas fa-shield-alt text-light"></i>
+                <span class="hiddenable no_wrap font_08">مجوز ها</span>
+            </li>
+            <!-- =================================== -->
+            <li class="py-1 text-start d-flex justify-content-center no_pointer no_hover ">
+                <span class="hiddenable no_wrap group_sidebar_title ">ارتباطات</span>
+            </li>
+            <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_question_section">
+                <i class="ms-3 icon fas fa-question-circle text-light"></i>
+                <span class="hiddenable no_wrap font_08">سوال ها</span>
+            </li>
+            <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_comments_section">
+                <i class="ms-3 icon fas fa-comment text-light"></i>
+                <span class="hiddenable no_wrap font_08">نظرات</span>
+            </li>
+            <!-- <li class="py-2 btn-group dropstart pe-4">
+                    <i class="ms-3 icon fas fa-check text-light"></i>
+                    <span class="hiddenable" data-bs-toggle="dropdown" aria-expanded="false">داشبورد</span>
+                    
+                    <ul class="dropdown-menu px-2 sidebar_submenu_list">
+                      <li class="d-none">اول</li>
+                      <li>اول</li>
+                      <li>دوم</li>
+                      <li>سوم</li>
+                    </ul>
+                </li> -->
+        </ul>
+    </div>
+</section>
+<!-- #endregion -->
+
+<section id="content_section" class="bg-light py-2 px-3">
+
+    <!-- #region(collapsed) dashboard section start -->
+    <div id="dashboard_section" class="dashboard_section main_section">
+
+        <!-- #endregion content -->
+
+        <!-- #region(collapsed) add product category section start -->
+        <div id="manage_product_category" class="manage_product_category main_section d-none">
+            <h4 class="text-center my-3">مدیریت دسته بندی محصولات</h4>
+            <div class="row justify-content-between">
+                <div class="col-10 col-md-6 col-lg-4">
+                    <div class="input-group mb-3" style="direction: ltr;">
+                        <input type="text" class="form-control" placeholder="قسمتی از عنوان را وارد کنید">
+                        <span class="input-group-text">جستجو</span>
+                    </div>
+                </div>
+                <div class="col-2 col-md-6 col-lg-4 d-flex flex-column align-items-end">
+                    <button class="btn btn-success d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#add_product_category_modal">
+                        <i class="fas fa-plus text-light"></i>
+                    </button>
+                </div>
+            </div>
+            <table class="table table-responsive text-center table-hover table-bordered">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>#</th>
+                        <th>عنوان</th>
+                        <th>وضعیت</th>
+                        <th>عملیات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>دسته شماره فلان</td>
+                        <td>فعال</td>
+                        <td>
+                            <i class="fas fa-project-diagram text-info mx-1 hoverable_text pointer has_tooltip" title="زیرمجموعه" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                            <i class="fas fa-edit text-warning mx-1 hoverable_text pointer has_tooltip" title="ویرایش دسته" data-bs-toggle="modal" data-bs-placement="top" data-bs-target="#add_product_category_modal"></i>
+                            <i class="fas fa-plus text-success mx-1 hoverable_text pointer has_tooltip" title="افزودن ویژگی" data-bs-toggle="modal" data-bs-target="#add_product_category_attr_modal"></i>
+                            <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف دسته" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>دسته شماره فلان</td>
+                        <td>فعال</td>
+                        <td>
+                            <i class="fas fa-project-diagram text-info mx-1 hoverable_text pointer has_tooltip" title="زیرمجموعه" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                            <i class="fas fa-edit text-warning mx-1 hoverable_text pointer has_tooltip" title="ویرایش دسته" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                            <i class="fas fa-plus text-success mx-1 hoverable_text pointer has_tooltip" title="افزودن ویژگی" data-bs-placement="top" data-bs-toggle="modal" data-bs-target="#add_product_category_attr_modal"></i>
+                            <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف دسته" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>دسته شماره فلان</td>
+                        <td>فعال</td>
+                        <td>
+                            <i class="fas fa-project-diagram text-info mx-1 hoverable_text pointer has_tooltip" title="زیرمجموعه" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                            <i class="fas fa-edit text-warning mx-1 hoverable_text pointer has_tooltip" title="ویرایش دسته" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                            <i class="fas fa-plus text-success mx-1 hoverable_text pointer has_tooltip" title="افزودن ویژگی" data-bs-placement="top" data-bs-toggle="modal" data-bs-target="#add_product_category_attr_modal"></i>
+                            <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف دسته" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>دسته شماره فلان</td>
+                        <td>فعال</td>
+                        <td>
+                            <i class="fas fa-project-diagram text-info mx-1 hoverable_text pointer has_tooltip" title="زیرمجموعه" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                            <i class="fas fa-edit text-warning mx-1 hoverable_text pointer has_tooltip" title="ویرایش دسته" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                            <i class="fas fa-plus text-success mx-1 hoverable_text pointer has_tooltip" title="افزودن ویژگی" data-bs-placement="top" data-bs-toggle="modal" data-bs-target="#add_product_category_attr_modal"></i>
+                            <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف دسته" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                <ul class="pagination dir_ltr">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- #endregion content -->
+
+        <!-- #region(collapsed) add product section start -->
+        <div id="manage_product_section" class="manage_product_section main_section d-none">
+            <h4 class="text-center my-3">مدیریت محصولات</h4>
+            <div class="row justify-content-between">
+                <div class="col-10 col-md-6 col-lg-4">
+                    <div class="input-group mb-3" style="direction: ltr;">
+                        <input type="text" class="form-control" placeholder="قسمتی از عنوان را وارد کنید">
+                        <span class="input-group-text">جستجو</span>
+                    </div>
+                </div>
+                <div class="col-2 col-md-6 col-lg-4 d-flex flex-column align-items-end">
+                    <button class="btn btn-success d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#add_product_modal">
+                        <i class="fas fa-plus text-light"></i>
+                    </button>
+                </div>
+            </div>
+            <table class="table table-responsive text-center table-hover table-bordered">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>#</th>
+                        <th>دسته</th>
+                        <th>عنوان</th>
+                        <th>قیمت</th>
+                        <th>موجودی</th>
+                        <th>تعداد لایک</th>
+                        <th>وضعیت</th>
+                        <th>عملیات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>دسته شماره فلان</td>
+                        <td>محصول شماره1</td>
+                        <td>20,000 تومان</td>
+                        <td>10</td>
+                        <td>
+                            <span class="text-success mx-2">30</span>
+                            <span class="text-danger mx-2">10</span>
+                        </td>
+                        <td>فعال</td>
+                        <td>
+                            <i class="fas fa-edit text-warning mx-1 hoverable_text pointer has_tooltip" title="ویرایش محصول" data-bs-toggle="modal" data-bs-placement="top" data-bs-target="#add_product_modal"></i>
+                            <i class="fas fa-receipt text-info mx-1 hoverable_text pointer has_tooltip" title="ثبت ویژگی" data-bs-toggle="modal" data-bs-target="#add_product_attr_modal"></i>
+                            <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف محصول" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                <ul class="pagination dir_ltr">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- #endregion content -->
+
+        <!-- #region(collapsed) add color section start -->
+        <div id="manage_color_section" class="add_color_section main_section d-none">
+            <h4 class="text-center my-3">مدیریت رنگ ها</h4>
+            <div class="row justify-content-between">
+                <div class="col-10 col-md-6 col-lg-4">
+                    <div class="input-group mb-3" style="direction: ltr;">
+                        <input type="text" class="form-control" placeholder="قسمتی از عنوان را وارد کنید">
+                        <span class="input-group-text">جستجو</span>
+                    </div>
+                </div>
+                <div class="col-2 col-md-6 col-lg-4 d-flex flex-column align-items-end">
+                    <button class="btn btn-success d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#add_color_modal">
+                        <i class="fas fa-plus text-light"></i>
+                    </button>
+                </div>
+            </div>
+            <table class="table table-responsive text-center table-hover table-bordered">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>#</th>
+                        <th>نام رنگ</th>
+                        <th>کد رنگ</th>
+                        <th>رنگ</th>
+                        <th>عملیات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>مشکی</td>
+                        <td>#000000</td>
+                        <td class="p-2">
+                            <div class="w-100 h-100 d-block" style="background: #000;color: #000;">...</div>
+                        </td>
+                        <td>
+                            <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف رنگ" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>قزمز</td>
+                        <td class="dir_ltr">#f44336 </td>
+                        <td class="p-2">
+                            <div class="w-100 h-100 d-block" style="background: #f44336 ;color: #f44336 ;">...</div>
+                        </td>
+                        <td>
+                            <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف رنگ" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                <ul class="pagination dir_ltr">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- #endregion content -->
+
+        <!-- #region(collapsed) add guarantee section start -->
+        <div id="manage_guarantee_section" class="manage_guarantee_section main_section d-none">
+            <h4 class="text-center my-3">مدیریت گارانتی ها</h4>
+            <div class="row justify-content-between">
+                <div class="col-10 col-md-6 col-lg-4">
+                    <div class="input-group mb-3" style="direction: ltr;">
+                        <input type="text" class="form-control" placeholder="قسمتی از عنوان را وارد کنید">
+                        <span class="input-group-text">جستجو</span>
+                    </div>
+                </div>
+                <div class="col-2 col-md-6 col-lg-4 d-flex flex-column align-items-end">
+                    <button class="btn btn-success d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#add_guarantee_modal">
+                        <i class="fas fa-plus text-light"></i>
+                    </button>
+                </div>
+            </div>
+            <table class="table table-responsive text-center table-hover table-bordered">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>#</th>
+                        <th>عنوان گارانتی</th>
+                        <th>مدت گارانتی</th>
+                        <th>توضیحات</th>
+                        <th>عملیات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>گارانتی 1</td>
+                        <td>12 ماه</td>
+                        <td> توضیحات اجمالی در مورد این گارانتی</td>
+                        <td>
+                            <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف گارانتی" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                <ul class="pagination dir_ltr">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- #endregion content -->
+
+        <!-- #region(collapsed) add brand section start -->
+        <div id="manage_brand_section" class="manage_brand_section main_section d-none">
+            <h4 class="text-center my-3">مدیریت برند ها</h4>
+            <div class="row justify-content-between">
+                <div class="col-10 col-md-6 col-lg-4">
+                    <div class="input-group mb-3" style="direction: ltr;">
+                        <input type="text" class="form-control" placeholder="قسمتی از عنوان را وارد کنید">
+                        <span class="input-group-text">جستجو</span>
+                    </div>
+                </div>
+                <div class="col-2 col-md-6 col-lg-4 d-flex flex-column align-items-end">
+                    <button class="btn btn-success d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#add_brand_modal">
+                        <i class="fas fa-plus text-light"></i>
+                    </button>
+                </div>
+            </div>
+            <table class="table table-responsive text-center table-hover table-bordered">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>#</th>
+                        <th>عنوان </th>
+                        <th>عنوان فارسی </th>
+                        <th>توضیحات</th>
+                        <th>لوگو</th>
+                        <th>عملیات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>brand 1</td>
+                        <td>برند شماره 1</td>
+                        <td> توضیحات اجمالی در مورد این برند</td>
+                        <td>
+                            <img src="/assets/images/logo.png" width="50">
+                        </td>
+                        <td>
+                            <i class="fas fa-edit text-warning mx-1 hoverable_text pointer has_tooltip" title="ویرایش برند" data-bs-toggle="modal" data-bs-placement="top" data-bs-target="#add_brand_modal"></i>
+                            <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف برند" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                <ul class="pagination dir_ltr">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- #endregion content -->
+
+        <!-- #region(collapsed) add discount code section start -->
+        <div id="manage_discount_section" class="manage_discount_section main_section d-none">
+            <h4 class="text-center my-3">مدیریت کد های تخفیف</h4>
+            <div class="row justify-content-between">
+                <div class="col-10 col-md-6 col-lg-4">
+                    <div class="input-group mb-3" style="direction: ltr;">
+                        <input type="text" class="form-control" placeholder="قسمتی از عنوان را وارد کنید">
+                        <span class="input-group-text">جستجو</span>
+                    </div>
+                </div>
+                <div class="col-2 col-md-6 col-lg-4 d-flex flex-column align-items-end">
+                    <button class="btn btn-success d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#add_discount_modal">
+                        <i class="fas fa-plus text-light"></i>
+                    </button>
+                </div>
+            </div>
+            <table class="table table-responsive text-center table-hover table-bordered">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>#</th>
+                        <th>عنوان </th>
+                        <th>کد</th>
+                        <th>درصد تخفیف</th>
+                        <th>تا تاریخ</th>
+                        <th>برای</th>
+                        <th>عملیات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>تخفیف شماره 1</td>
+                        <td>takhfif1</td>
+                        <td>39%</td>
+                        <td>1400/10/12</td>
+                        <td>همه</td>
+                        <td>
+                            <i class="fas fa-edit text-warning mx-1 hoverable_text pointer has_tooltip" title="ویرایش کد" data-bs-toggle="modal" data-bs-placement="top" data-bs-target="#add_discount_modal"></i>
+                            <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف کد" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                <ul class="pagination dir_ltr">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- #endregion content -->
+
+        <!-- #region(collapsed) cart section start  -->
+        <div id="manage_cart_section" class="manage_cart_section main_section d-none">
+            <h4 class="text-center my-3">مدیریت سبد خرید</h4>
+            <div class="row justify-content-between">
+                <div class="col-10 col-md-6 col-lg-4">
+                    <div class="input-group mb-3" style="direction: ltr;">
+                        <input type="text" class="form-control" placeholder="قسمتی از نام یا شماره سبد را وارد کنید">
+                        <span class="input-group-text">جستجو</span>
+                    </div>
+                </div>
+                <div class="col-2 col-md-6 col-lg-4 d-flex flex-column align-items-end">
+                    <button class="btn btn-success d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#edit_cart_modal">
+                        <i class="fas fa-plus text-light"></i>
+                    </button>
+                </div>
+            </div>
+            <table class="table table-responsive text-center table-hover table-bordered">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>#</th>
+                        <th>آی دی مشتری</th>
+                        <th>نام مشتری</th>
+                        <th>تاریخ</th>
+                        <th>مبلغ کل سبد</th>
+                        <th>وضعیت</th>
+                        <th>عملیات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>50</td>
+                        <td>قاسم بساکی</td>
+                        <td>1400/07/15</td>
+                        <td>100هزار تومان</td>
+                        <td>فعال</td>
+                        <td>
+                            <i class="fas fa-edit text-warning mx-1 hoverable_text pointer has_tooltip" title="ویرایش و جزئیات سبد" data-bs-toggle="modal" data-bs-placement="top" data-bs-target="#edit_cart_modal"></i>
+                            <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف سبد" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                <ul class="pagination dir_ltr">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- #endregion -->
+
+        <!-- #region(collapsed) order section start  -->
+        <div id="manage_orders_section" class="manage_orders_section main_section d-none">
+            <h4 class="text-center my-3">مدیریت سفارشات</h4>
+            <div class="row justify-content-between">
+                <div class="col-10 col-md-6 col-lg-4">
+                    <div class="input-group mb-3" style="direction: ltr;">
+                        <input type="text" class="form-control" placeholder="قسمتی از نام کاربر یا شماره سفارش را وارد کنید">
+                        <span class="input-group-text">جستجو</span>
+                    </div>
+                </div>
+                <div class="col-2 col-md-6 col-lg-4 d-flex flex-column align-items-end">
+                    <button class="btn btn-success d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#add_order_modal">
+                        <i class="fas fa-plus text-light"></i>
+                    </button>
+                </div>
+            </div>
+            <table class="table table-responsive text-center table-hover table-bordered">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>#</th>
+                        <th>آی دی مشتری</th>
+                        <th>نام مشتری</th>
+                        <th>وضعیت</th>
+                        <th>تاریخ پرداخت</th>
+                        <th>مبلغ پرداختی</th>
+                        <th>عملیات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>50</td>
+                        <td>قاسم بساکی</td>
+                        <td>پرداخت شده</td>
+                        <td>1400/07/15</td>
+                        <td>100هزار تومان</td>
+                        <td>
+                            <i class="fas fa-shopping-cart text-info mx-1 hoverable_text pointer has_tooltip" title="  جزئیات سفارش" data-bs-toggle="modal" data-bs-placement="top" data-bs-target="#order_details_modal"></i>
+                            <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف سفارش" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                <ul class="pagination dir_ltr">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- #endregion -->
+
+        <!-- #region(collapsed) manage delivery section start -->
+        <div id="manage_deliveries_section" class="manage_deliveries_section main_section d-none">
+            <h4 class="text-center my-3">مدیریت نحوه ارسال</h4>
+            <div class="row justify-content-between">
+                <div class="col-10 col-md-6 col-lg-4">
+                    <div class="input-group mb-3" style="direction: ltr;">
+                        <input type="text" class="form-control" placeholder="قسمتی از عنوان را وارد کنید">
+                        <span class="input-group-text">جستجو</span>
+                    </div>
+                </div>
+                <div class="col-2 col-md-6 col-lg-4 d-flex flex-column align-items-end">
+                    <button class="btn btn-success d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#add_delivery_modal">
+                        <i class="fas fa-plus text-light"></i>
+                    </button>
+                </div>
+            </div>
+            <table class="table table-responsive text-center table-hover table-bordered">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>#</th>
+                        <th>عنوان</th>
+                        <th>هزینه</th>
+                        <th>زمان ارسال</th>
+                        <th>واحد زمان</th>
+                        <th>عملیات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>پست پیشتاز</td>
+                        <td>25,000 تومان</td>
+                        <td> 10</td>
+                        <td> روز</td>
+                        <td>
+                            <i class="fas fa-edit text-warning mx-1 hoverable_text pointer has_tooltip" title="ویرایش" data-bs-toggle="modal" data-bs-placement="top" data-bs-target="#add_delivery_modal"></i>
+                            <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف " data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                <ul class="pagination dir_ltr">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- #endregion content -->
+
+        <!-- #region(collapsed) add user section start -->
+        <div id="manage_user_section" class="manage_user_section main_section d-none">
+            <h4 class="text-center my-3">مدیریت کاربران</h4>
+            <div class="row justify-content-between">
+                <div class="col-10 col-md-6 col-lg-4">
+                    <div class="input-group mb-3" style="direction: ltr;">
+                        <input type="text" class="form-control" placeholder="قسمتی از نام یا نام خانوادگی را وارد کنید">
+                        <span class="input-group-text">جستجو</span>
+                    </div>
+                </div>
+                <div class="col-2 col-md-6 col-lg-4 d-flex flex-column align-items-end">
+                    <button class="btn btn-success d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#add_user_modal">
+                        <i class="fas fa-plus text-light"></i>
+                    </button>
+                </div>
+            </div>
+            <table class="table table-responsive text-center table-hover table-bordered">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>#</th>
+                        <th>نام و نام خانوادگی</th>
+                        <th>موبایل</th>
+                        <th>ایمیل</th>
+                        <th>نقش </th>
+                        <th>تاریخ ثبت نام</th>
+                        <th>عملیات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>قاسم بساکی</td>
+                        <td>09110110011</td>
+                        <td>mahdicmptr@gmail.com</td>
+                        <td>کاربر</td>
+                        <td>1400/10/12</td>
+                        <td>
+                            <i class="fas fa-edit text-warning mx-1 hoverable_text pointer has_tooltip" title="جزئیات و ویرایش کاربر" data-bs-toggle="modal" data-bs-placement="top" data-bs-target="#add_user_modal"></i>
+                            <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف کاربر" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                <ul class="pagination dir_ltr">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- #endregion content -->
+
+        <!-- #region(collapsed) add role section start -->
+        <div id="manage_role_section" class="manage_role_section main_section d-none">
+            <h4 class="text-center my-3">مدیریت نقش ها</h4>
+            <div class="row justify-content-between">
+                <div class="col-10 col-md-6 col-lg-4">
+                    <div class="input-group mb-3" style="direction: ltr;">
+                        <input type="text" class="form-control" placeholder="قسمتی از نام نقش را وارد کنید">
+                        <span class="input-group-text">جستجو</span>
+                    </div>
+                </div>
+                <div class="col-2 col-md-6 col-lg-4 d-flex flex-column align-items-end">
+                    <button class="btn btn-success d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#add_role_modal">
+                        <i class="fas fa-plus text-light"></i>
+                    </button>
+                </div>
+            </div>
+            <table class="table table-responsive text-center table-hover table-bordered">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>#</th>
+                        <th>عنوان</th>
+                        <th>توضیحات</th>
+                        <th>وضعیت</th>
+                        <th>عملیات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>نقش شماره 1</td>
+                        <td>توضیحات در مورد این نقش که چیست و کلیات آن کدام است</td>
+                        <td>
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center p-0 h-100">
+                                <label class="form-check-label pointer" for="flexSwitchCheckDefault">فعال</label>
+                                <input class="form-check-input pointer mx-3" type="checkbox" id="flexSwitchCheckDefault" checked>
+                            </div>
+                        </td>
+                        <td>
+                            <i class="fas fa-edit text-warning mx-1 hoverable_text pointer has_tooltip" title="ویرایش نقش" data-bs-toggle="modal" data-bs-placement="top" data-bs-target="#add_role_modal"></i>
+                            <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف نقش" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                <ul class="pagination dir_ltr">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- #endregion content -->
+
+        <!-- #region(collapsed) add permissions section start -->
+        <div id="manage_permission_section" class="manage_permission_section main_section d-none">
+            <h4 class="text-center my-3">مدیریت مجوز ها</h4>
+            <div class="row justify-content-between">
+                <div class="col-10 col-md-6 col-lg-4">
+                    <div class="input-group mb-3" style="direction: ltr;">
+                        <input type="text" class="form-control" placeholder="قسمتی از نام مجوز را وارد کنید">
+                        <span class="input-group-text">جستجو</span>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-responsive text-center table-hover table-bordered">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>#</th>
+                        <th>عنوان</th>
+                        <th>توضیحات</th>
+                        <th>وضعیت</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td> مجوز شماره 1</td>
+                        <td>توضیحات در مورد این مجوز که چیست و کلیات آن کدام است</td>
+                        <td>
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center p-0 h-100">
+                                <label class="form-check-label pointer" for="flexSwitchCheckDefault">فعال</label>
+                                <input class="form-check-input pointer mx-3" type="checkbox" id="flexSwitchCheckDefault" checked>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                <ul class="pagination dir_ltr">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- #endregion content -->
+
+        <!-- #region(collapsed) manage comments section start -->
+        <div id="manage_comments_section" class="manage_comments_section main_section d-none">
+            <h4 class="text-center my-3">مدیریت نظرات</h4>
+            <div class="row justify-content-between">
+                <div class="col-10 col-md-6 col-lg-4">
+                    <div class="input-group mb-3" style="direction: ltr;">
+                        <input type="text" class="form-control" placeholder="قسمتی از نام یا نام خانوادگی یا نظر را وارد کنید">
+                        <span class="input-group-text">جستجو</span>
+                    </div>
+                </div>
+                <div class="col-2 col-md-6 col-lg-4 d-flex flex-column align-items-end">
+                    <button class="btn btn-success d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#add_comment_modal">
+                    <i class="fas fa-plus text-light"></i>
+                </button>
+                </div>
+            </div>
+            <table class="table table-responsive text-center table-hover table-bordered">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>#</th>
+                        <th>نام و نام خانوادگی</th>
+                        <th>نوع نظر</th>
+                        <th>برای</th>
+                        <th>قسمتی از متن</th>
+                        <th>وضعیت</th>
+                        <th>تاریخ</th>
+                        <th>عملیات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>قاسم بساکی</td>
+                        <td>نظر</td>
+                        <td>محصول فلان</td>
+                        <td>قسمتی از متن نظر برای این محصول مثلا 100 کارکتر</td>
+                        <td>
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center p-0 h-100">
+                                <label class="form-check-label pointer" for="flexSwitchCheckDefault">فعال</label>
+                                <input class="form-check-input pointer mx-3" type="checkbox" id="flexSwitchCheckDefault">
+                            </div>
+                        </td>
+                        <td>1400/10/12</td>
+                        <td>
+                            <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف نظر" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                <ul class="pagination dir_ltr">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- #endregion content -->
+
+        <!-- #region(collapsed) manage questions section start -->
+        <div id="manage_question_section" class="manage_question_section main_section d-none">
+            <h4 class="text-center my-3">مدیریت سوالات</h4>
+            <div class="row justify-content-between">
+                <div class="col-10 col-md-6 col-lg-4">
+                    <div class="input-group mb-3" style="direction: ltr;">
+                        <input type="text" class="form-control" placeholder="قسمتی از نام یا نام خانوادگی یا سوال را وارد کنید">
+                        <span class="input-group-text">جستجو</span>
+                    </div>
+                </div>
+                <div class="col-2 col-md-6 col-lg-4 d-flex flex-column align-items-end">
+                    <button class="btn btn-success d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#add_question_modal">
+                    <i class="fas fa-plus text-light"></i>
+                </button>
+                </div>
+            </div>
+            <table class="table table-responsive text-center table-hover table-bordered">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>#</th>
+                        <th>نام و نام خانوادگی</th>
+                        <th>نوع سوال</th>
+                        <th>دسته</th>
+                        <th>قسمتی از متن</th>
+                        <th>وضعیت</th>
+                        <th>تاریخ</th>
+                        <th>عملیات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>قاسم بساکی</td>
+                        <td>پرسش</td>
+                        <td>محصولات</td>
+                        <td>قسمتی از متن سوال برای این محصول مثلا 100 کارکتر</td>
+                        <td>
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center p-0 h-100">
+                                <label class="form-check-label pointer" for="flexSwitchCheckDefault">فعال</label>
+                                <input class="form-check-input pointer mx-3" type="checkbox" id="flexSwitchCheckDefault">
+                            </div>
+                        </td>
+                        <td>1400/10/12</td>
+                        <td>
+                            <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف سوال" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                <ul class="pagination dir_ltr">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- #endregion content -->
+
+
+</section>
+
+
+
+
+
+<!-- #region(collapsed) add product category modal  -->
+<div class="modal fade" id="add_product_category_modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title flex-fill" id="exampleModalLabel">افزودن دسته محصولات</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <select type="text" class="form-control">
+                                    <option value="1">بدون والد</option>
+                                    <option value="1">دسته شماره 1</option>
+                                </select>
+                                <span class="input-group-text w_6rem justify-content-center">دسته والد</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="عنوان دسته">
+                                <span class="input-group-text w_6rem justify-content-center">عنوان</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <textarea type="text" class="form-control" placeholder="توضیحات" rows="5"></textarea>
+                                <span class="input-group-text w_6rem justify-content-center">توضیحات</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <input type="file" class="form-control" placeholder="تصویر">
+                                <span class="input-group-text w_6rem justify-content-center">تصویر</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8 row justify-content-center">
+                            <div class="form-check form-switch col-5 col-md-2">
+                                <input class="form-check-input pointer" type="checkbox" id="flexSwitchCheckDefault" checked>
+                                <label class="form-check-label pointer" for="flexSwitchCheckDefault">وضعیت فعال</label>
+                            </div>
+                        </div>
+                        <div class="btn_box text-center col-12 col-md-6 col-lg-8 mt-4">
+                            <button class="btn btn-primary ">ذخیره</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  #endregion  -->
+
+<!-- #region(collapsed) add product category attribute modal  -->
+<div class="modal fade" id="add_product_category_attr_modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title flex-fill" id="exampleModalLabel">افزودن ویژگی به دسته بندی</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="row my-3">
+                            <div class="col-12 col-md-6 col-lg-4 my-1">
+                                <input type="text" class="form-control" placeholder="عنوان ویژگی جدید">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 my-1">
+                                <input type="text" class="form-control" placeholder="واحد ویژگی جدید">
+                            </div>
+                            <div class="col-8 col-lg-2 my-1">
+                                <div class="form-check form-switch d-flex justify-content-center align-items-center p-0 h-100">
+                                    <label class="form-check-label pointer" for="flexSwitchCheckDefault">نمایش در فیلتر</label>
+                                    <input class="form-check-input pointer mx-3" type="checkbox" id="flexSwitchCheckDefault" checked>
+                                </div>
+                            </div>
+                            <div class="col-4 col-lg-2 d-flex justify-content-center align-items-center my-1">
+                                <i class="fas fa-check text-light bg-success rounded-circle p-2 mx-1 hoverable_text hoverable pointer has_tooltip hoverable_text" title="ثبت ویژگی" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="row justify-content-between">
+                            <div class="col-10 col-md-6 col-lg-4">
+                                <div class="input-group mb-3" style="direction: ltr;">
+                                    <input type="text" class="form-control" placeholder="قسمتی از عنوان را وارد کنید">
+                                    <span class="input-group-text">جستجو</span>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="table table-responsive text-center table-hover table-bordered">
+                            <thead class="table-secondary">
+                                <tr>
+                                    <th>#</th>
+                                    <th>عنوان</th>
+                                    <th>واحد</th>
+                                    <th>نمایش در فیلتر</th>
+                                    <th>عملیات</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>ویژگی شماره 1</td>
+                                    <td>عدد</td>
+                                    <td>
+                                        <div class="form-check form-switch d-flex justify-content-center">
+                                            <input class="form-check-input pointer" type="checkbox" id="flexSwitchCheckDefault" checked>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <i class="fas fa-edit text-warning mx-1 hoverable_text pointer has_tooltip" title="ویرایش دسته" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                                        <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف دسته" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  #endregion  -->
+
+<!-- #region(collapsed) add product modal  -->
+<div class="modal fade" id="add_product_modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title flex-fill" id="exampleModalLabel">افزودن محصول جدید</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-2" style="direction: ltr;">
+                                <select type="text" class="form-control">
+                                    <option value="1">انتخاب دسته محصول</option>
+                                    <option value="1">دسته شماره 1</option>
+                                </select>
+                                <span class="input-group-text w_6rem justify-content-center">دسته</span>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-8">
+                                <span class="chips_elem">
+                                    <i class="fas fa-times text-danger"></i>
+                                    دسته فلان
+                                </span>
+                                <span class="chips_elem">
+                                    <i class="fas fa-times text-danger"></i>
+                                    دسته فلان
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="عنوان محصول">
+                                <span class="input-group-text w_6rem justify-content-center">عنوان</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="قیمت محصول">
+                                <span class="input-group-text w_6rem justify-content-center">قیمت</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="وزن محصول (کیلوگرم)">
+                                <span class="input-group-text w_6rem justify-content-center">وزن</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <span class="input-group-text justify-content-center">
+                                    <i class="fas fa-plus text-success hoverable_text pointer"></i>
+                                </span>
+                                <input type="text" class="form-control" placeholder="قسمتی از نام برند را وارد کنید" list="brandLists">
+                                <span class="input-group-text w_6rem justify-content-center">برند</span>
+                                <datalist id="brandLists">
+                                    <option value="سامسونگ">
+                                    <option value="سونی">
+                                    <option value="اپل">
+                                </datalist>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-2" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="قسمتی از نام رنگ را وارد کنید" list="colorList">
+                                <datalist id="colorList">
+                                    <option value="مشکی">
+                                    <option value="سفید">
+                                    <option value="قرمز">
+                                </datalist>
+                                <span class="input-group-text w_6rem justify-content-center">رنگ</span>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-8 mb-3 d-flex">
+                                <span class="color_tag chips_elem d-flex justify-content-center align-items-center pb-2" style="background: #000;">
+                                    <i class="fas fa-times text-danger hoverable_text"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-2" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="قسمتی از نام گارانتی را وارد کنید" list="guarantiList">
+                                <datalist id="guarantiList">
+                                    <option value="گارانتی فلان 1">
+                                    <option value="گارانتی فلان 2">
+                                    <option value="گارانتی فلان 3">
+                                </datalist>
+                                <span class="input-group-text w_6rem justify-content-center">گارانتی</span>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-8 mb-3">
+                                <span class="chips_elem">
+                                    <i class="fas fa-times text-danger"></i>
+                                    گارانتی فلان
+                                </span>
+                                <span class="chips_elem">
+                                    <i class="fas fa-times text-danger"></i>
+                                    گارانتی فلان
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <textarea type="text" class="form-control" placeholder="توضیحات" rows="5"></textarea>
+                                <span class="input-group-text w_6rem justify-content-center">توضیحات</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <input type="file" class="form-control" placeholder="تصویر">
+                                <span class="input-group-text w_6rem justify-content-center">تصویر</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="یک کلمه در مورد تصویر">
+                                <span class="input-group-text w_6rem justify-content-center">توضیح تصویر</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="با - از هم جدا شوند">
+                                <span class="input-group-text w_6rem justify-content-center">تگ ها</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <input type="number" class="form-control" placeholder="فقط عدد">
+                                <span class="input-group-text w_6rem justify-content-center">موجودی</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <input type="number" class="form-control" placeholder="فقط عدد ">
+                                <span class="input-group-text w_6rem justify-content-center">درصد تخفیف</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8 row justify-content-center">
+                            <div class="form-check form-switch col-5 col-md-2">
+                                <input class="form-check-input pointer" type="checkbox" id="flexSwitchCheckDefault" checked>
+                                <label class="form-check-label pointer" for="flexSwitchCheckDefault">وضعیت فعال</label>
+                            </div>
+                        </div>
+                        <div class="btn_box text-center col-12 col-md-6 col-lg-8 mt-4">
+                            <button class="btn btn-primary ">ذخیره</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  #endregion  -->
+
+<!-- #region(collapsed) add product category attribute modal  -->
+<div class="modal fade" id="add_product_attr_modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title flex-fill" id="exampleModalLabel">افزودن ویژگی به دسته محصول</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <span class="input-group-text w_6rem justify-content-center">عدد</span>
+                                <input type="text" class="form-control" placeholder="">
+                                <span class="input-group-text w_8rem justify-content-center">ویژگی اول</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <span class="input-group-text w_6rem justify-content-center">کیلو</span>
+                                <input type="text" class="form-control" placeholder="">
+                                <span class="input-group-text w_8rem justify-content-center">ویژگی دوم</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <span class="input-group-text w_6rem justify-content-center">مگاهرتز</span>
+                                <input type="text" class="form-control" placeholder="">
+                                <span class="input-group-text w_8rem justify-content-center">ویژگی سوم</span>
+                            </div>
+                        </div>
+                        <div class="btn_box text-center col-12 col-md-6 col-lg-8 mt-4">
+                            <button class="btn btn-primary ">ذخیره</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  #endregion  -->
+
+<!-- #region(collapsed) add color modal  -->
+<div class="modal fade" id="add_color_modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title flex-fill" id="exampleModalLabel">افزودن رنگ</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="">
+                                <span class="input-group-text w_8rem justify-content-center">نام رنگ</span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="exampleColorInput" class="form-label">انتخاب رنگ</label>
+                            <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                        </div>
+                        <div class="btn_box text-center col-12 col-md-6 col-lg-8 mt-4">
+                            <button class="btn btn-primary ">ذخیره</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  #endregion  -->
+
+<!-- #region(collapsed) add guarantee modal  -->
+<div class="modal fade" id="add_guarantee_modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title flex-fill" id="exampleModalLabel">افزودن گارانتی</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="">
+                                <span class="input-group-text w_8rem justify-content-center">عنوان گارانتی</span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="">
+                                <span class="input-group-text w_8rem justify-content-center">توضیحات گارانتی</span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder=" به ماه">
+                                <span class="input-group-text w_8rem justify-content-center">مدت گارانتی</span>
+                            </div>
+                        </div>
+                        <div class="btn_box text-center col-12 col-md-6 col-lg-8 mt-4">
+                            <button class="btn btn-primary ">ذخیره</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  #endregion  -->
+
+<!-- #region(collapsed) add brands modal  -->
+<div class="modal fade" id="add_brand_modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title flex-fill" id="exampleModalLabel">افزودن برند</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="کیبرد را در حالت لاتین قرار دهید">
+                                <span class="input-group-text w_8rem justify-content-center">عنوان لاتیتن برند</span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="کیبرد را در حالت فارسی قرار دهید">
+                                <span class="input-group-text w_8rem justify-content-center">عنوان فارسی برند</span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="متن کوتاه در مورد برند">
+                                <span class="input-group-text w_8rem justify-content-center">توضیحات برند</span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <input type="file" class="form-control" placeholder="تصویر">
+                                <span class="input-group-text w_6rem justify-content-center">تصویر</span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="یک کلمه در مورد تصویر">
+                                <span class="input-group-text w_6rem justify-content-center">توضیح تصویر</span>
+                            </div>
+                        </div>
+                        <div class="btn_box text-center col-12 col-md-6 col-lg-8 mt-4">
+                            <button class="btn btn-primary ">ذخیره</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  #endregion  -->
+
+<!-- #region(collapsed) add discounts modal  -->
+<div class="modal fade" id="add_discount_modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title flex-fill" id="exampleModalLabel">افزودن کد تخفیف</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="کیبرد را در حالت فارسی قرار دهید">
+                                <span class="input-group-text w_8rem justify-content-center">عنوان کد</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="کیبرد را در حالت لاتین قرار دهید">
+                                <span class="input-group-text w_8rem justify-content-center">کد تخفیف</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <input type="number" class="form-control" placeholder="فقط عدد ">
+                                <span class="input-group-text w_8rem justify-content-center">درصد تخفیف </span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="مثلا 1400/10/10 ">
+                                <span class="input-group-text w_8rem justify-content-center">تاریخ اعتبار </span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8 col-md-6 col-lg-8">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="قسمتی از نام محصول را وارد کنید" list="brandLists">
+                                <span class="input-group-text w_8rem justify-content-center">برای</span>
+                                <datalist id="brandLists">
+                                    <option value="محصول شماره 1">
+                                    <option value="محصول شماره 2">
+                                    <option value="محصول شماره 3">
+                                </datalist>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-8">
+                                <span class="chips_elem">
+                                    <i class="fas fa-times text-danger"></i>
+                                    محصول 1
+                                </span>
+                                <span class="chips_elem">
+                                    <i class="fas fa-times text-danger"></i>
+                                    محصول 2
+                                </span>
+                            </div>
+                        </div>
+                        <div class="btn_box text-center col-12 col-md-6 col-lg-8 mt-4">
+                            <button class="btn btn-primary ">ذخیره</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  #endregion  -->
+
+<!-- #region(collapsed) edit cart  modal  -->
+<div class="modal fade" id="edit_cart_modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title flex-fill" id="exampleModalLabel">جزئیات سبد خرید</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row my-3 justify-content-center">
+                        <div class="col-12 col-md-4 col-lg-3 my-1">
+                            <input type="text" class="form-control" list="customer_list" placeholder="نام مشتری">
+                            <datalist id="customer_list">
+                                <option value="مشتری شماره 1">
+                                <option value="مشتری شماره 2">
+                            </datalist>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" list="product_list" placeholder="عنوان محصول">
+                            <datalist id="product_list">
+                                <option value="محصول شماره 1">
+                                <option value="محصول شماره 2">
+                            </datalist>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <select class="form-control">
+                                <option value="">انتخاب رنگ</option>
+                                <option value="1">رنگ شماره 1</option>
+                                <option value="2">رنگ شماره 2</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <select class="form-control">
+                                <option value="">انتخاب گارانتی</option>
+                                <option value="1">گارانتی شماره 1</option>
+                                <option value="2">گارانتی شماره 2</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="number" class="form-control" placeholder="تعداد">
+                        </div>
+                        <div class="col-4 col-lg-1 d-flex justify-content-center align-items-center my-1">
+                            <i class="fas fa-check text-light bg-success rounded-circle p-2 mx-1 hoverable_text hoverable pointer has_tooltip hoverable_text" title="ثبت ویژگی" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                        </div>
+                        <hr class="mt-3">
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <span class="input-group-text justify-content-center w_15">عدد</span>
+                                <input type="number" class="form-control text-center w_15" placeholder="" value="50">
+                                <span class="input-group-text text-end w_70 font_08 d-flex align-items-center text_truncate">
+                                    <i class="fas fa-times text-danger hoverable_text pointer mx-1 has_tooltip" title="حذف محصول از سبد" data-bs-placement="top"></i>
+                                    محصول شماره 1
+                                    ( 100هزار تومان)
+                                    ( گارانتی فلان)
+                                    <i class="fas fa-circle mx-1" style="color: #000;"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <span class="input-group-text justify-content-center w_15">عدد</span>
+                                <input type="number" class="form-control text-center w_15" placeholder="" value="5">
+                                <span class="input-group-text text-end w_70 font_08 d-flex align-items-center text_truncate">
+                                    <i class="fas fa-times text-danger hoverable_text pointer mx-1 has_tooltip" title="حذف محصول از سبد" data-bs-placement="top"></i>
+                                    محصول ویژه و مورد خاص شماره 2
+                                    ( 100هزار تومان)
+                                    ( گارانتی فلان)
+                                    <i class="fas fa-circle mx-1" style="color: rgb(236, 16, 16);"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <span class="input-group-text justify-content-center w-75">200,000 تومان</span>
+                                <span class="input-group-text w-25 text-center"> جمع کل </span>
+                            </div>
+                        </div>
+                        <div class="btn_box text-center col-12 col-md-6 col-lg-8 mt-4">
+                            <button class="btn btn-primary ">ذخیره</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  #endregion  -->
+
+<!-- #region(collapsed) order details modal  -->
+<div class="modal fade" id="order_details_modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title flex-fill" id="exampleModalLabel">جزئیات سفارش</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row my-1 justify-content-center">
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" value="قاسم بساکی" disabled>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" value="تاریخ پرداخت" disabled>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" value="مبلغ پرداختی" disabled>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" value="مبلغ تخفیف" disabled>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" value="کد تخفیف" disabled>
+                        </div>
+                        <div class="col-12"></div>
+                        <div class="col-12 col-md-10 my-1">
+                            <input type="text" class="form-control" value="آدرس کامل" disabled>
+                        </div>
+                        <div class="col-12"></div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" value="نوع ارسال" disabled>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" value="تلفن" disabled>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" value="ایمیل" disabled>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" value="شماره کارت" disabled>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" value="نام بانک" disabled>
+                        </div>
+
+                        <hr class="mt-3">
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-1" style="direction: ltr;">
+                                <span class="input-group-text justify-content-center w_15">عدد</span>
+                                <input type="number" class="form-control text-center w_15" placeholder="" value="50" disabled>
+                                <span class="input-group-text text-end w_70 font_08 d-flex align-items-center text_truncate">
+                                    محصول شماره 1
+                                    ( 100هزار تومان)
+                                    ( گارانتی فلان)
+                                    <i class="fas fa-circle mx-1" style="color: #000;"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-1" style="direction: ltr;">
+                                <span class="input-group-text justify-content-center w_15">عدد</span>
+                                <input type="number" class="form-control text-center w_15" placeholder="" value="5" disabled>
+                                <span class="input-group-text text-end w_70 font_08 d-flex align-items-center text_truncate">
+                                    محصول ویژه و مورد خاص شماره 2
+                                    ( 100هزار تومان)
+                                    ( گارانتی فلان)
+                                    <i class="fas fa-circle mx-1" style="color: rgb(236, 16, 16);"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  #endregion  -->
+
+<!-- #region(collapsed) add order modal  -->
+<div class="modal fade" id="add_order_modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title flex-fill" id="exampleModalLabel">افزودن سفارش</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row my-1 justify-content-center">
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" list="cart_list_select" placeholder="انتخاب سبد">
+                            <datalist id="cart_list_select">
+                                <option value="46 - سبد شماره 1">
+                                <option value="58 - سبد شماره 2">
+                            </datalist>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" placeholder="تاریخ پرداخت">
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" value="پرداخت : 500,000 تومان" disabled>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" value="تخفیف : 5,000 تومان" disabled>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" placeholder="کد تخفیف">
+                        </div>
+                        <div class="col-12"></div>
+                        <div class="col-12 col-md-10 my-1">
+                            <input type="text" class="form-control" placeholder="آدرس کامل">
+                        </div>
+                        <div class="col-12"></div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <select class="form-control">
+                                <option value="">نوع ارسال</option>
+                                <option value="1">پیشتاز</option>
+                                <option value="2">معمولی</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" placeholder="تلفن">
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" placeholder="ایمیل">
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" placeholder="شماره کارت">
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" placeholder="نام بانک">
+                        </div>
+
+                        <hr class="mt-3">
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-1" style="direction: ltr;">
+                                <span class="input-group-text justify-content-center w_15">عدد</span>
+                                <input type="number" class="form-control text-center w_15" placeholder="" value="50" disabled>
+                                <span class="input-group-text text-end w_70 font_08 d-flex align-items-center text_truncate">
+                                    محصول شماره 1
+                                    ( 100هزار تومان)
+                                    ( گارانتی فلان)
+                                    <i class="fas fa-circle mx-1" style="color: #000;"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-1" style="direction: ltr;">
+                                <span class="input-group-text justify-content-center w_15">عدد</span>
+                                <input type="number" class="form-control text-center w_15" placeholder="" value="5" disabled>
+                                <span class="input-group-text text-end w_70 font_08 d-flex align-items-center text_truncate">
+                                    محصول ویژه و مورد خاص شماره 2
+                                    ( 100هزار تومان)
+                                    ( گارانتی فلان)
+                                    <i class="fas fa-circle mx-1" style="color: rgb(236, 16, 16);"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_box text-center col-12 mt-4">
+                        <button class="btn btn-primary ">ذخیره</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  #endregion  -->
+
+<!-- #region(collapsed) add guarantee modal  -->
+<div class="modal fade" id="add_delivery_modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title flex-fill" id="exampleModalLabel">افزودن روش ارسال</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="">
+                                <span class="input-group-text w_8rem justify-content-center">عنوان</span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <input type="number" class="form-control" placeholder="تومان (فقط عدد)">
+                                <span class="input-group-text w_8rem justify-content-center"> هزینه </span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="فقط عدد">
+                                <span class="input-group-text w_8rem justify-content-center">مدت ارسال</span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="">
+                                <span class="input-group-text w_8rem justify-content-center">واحد مدت ارسال</span>
+                            </div>
+                        </div>
+                        <div class="btn_box text-center col-12 col-md-6 col-lg-8 mt-4">
+                            <button class="btn btn-primary ">ذخیره</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  #endregion  -->
+
+<!-- #region(collapsed) add user modal  -->
+<div class="modal fade" id="add_user_modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title flex-fill" id="exampleModalLabel">افزودن کاربر</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-1" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="فقط از حروف استفاده شود">
+                                <span class="input-group-text w_8rem justify-content-center">نام</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-1" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="فقط از حروف استفاده شود">
+                                <span class="input-group-text w_8rem justify-content-center">نام خانوادگی</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-1" style="direction: ltr;">
+                                <input type="number" class="form-control" placeholder="فقط از عدد استفاده شود">
+                                <span class="input-group-text w_8rem justify-content-center">کد ملی</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-1" style="direction: ltr;">
+                                <input type="number" class="form-control" placeholder="فقط از عدد استفاده شود">
+                                <span class="input-group-text w_8rem justify-content-center">شماره موبایل</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-1" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="فقط فرمت ایمیل (email@yourhost.com)">
+                                <span class="input-group-text w_8rem justify-content-center">ایمیل</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-1" style="direction: ltr;">
+                                <span class="input-group-text justify-content-center pointer">
+                                    <i class="fas fa-eye"></i>
+                                </span>
+                                <input type="password" class="form-control" placeholder="حد اقل 8 کارکتر">
+                                <span class="input-group-text w_8rem justify-content-center">رمز عبور</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8 row px-0 my-3">
+                            <label>تاریخ تولد:</label>
+                            <div class="col-12 col-md-4">
+                                <div class="input-group my-1" style="direction: ltr;">
+                                    <select class="form-control">
+                                        <option value="">انتخاب کنید</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                    <span class="input-group-text w_8rem justify-content-center">روز</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="input-group my-1" style="direction: ltr;">
+                                    <select class="form-control">
+                                        <option value="">انتخاب کنید</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                    <span class="input-group-text w_8rem justify-content-center">ماه</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="input-group my-1" style="direction: ltr;">
+                                    <select class="form-control">
+                                        <option value="">انتخاب کنید</option>
+                                        <option value="1">1368</option>
+                                        <option value="1">1300</option>
+                                        <option value="2">1301</option>
+                                        <option value="3">1302</option>
+                                    </select>
+                                    <span class="input-group-text w_8rem justify-content-center">سال</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-8 row px-0 my-3">
+                            <label>تاریخ ثبت موبایل:</label>
+                            <div class="col-12 col-md-4">
+                                <div class="input-group my-1" style="direction: ltr;">
+                                    <select class="form-control">
+                                        <option value="">انتخاب کنید</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                    <span class="input-group-text w_8rem justify-content-center">روز</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="input-group my-1" style="direction: ltr;">
+                                    <select class="form-control">
+                                        <option value="">انتخاب کنید</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                    <span class="input-group-text w_8rem justify-content-center">ماه</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="input-group my-1" style="direction: ltr;">
+                                    <select class="form-control">
+                                        <option value="">انتخاب کنید</option>
+                                        <option value="1">1400</option>
+                                        <option value="1">1399</option>
+                                        <option value="2">1398</option>
+                                        <option value="3">1397</option>
+                                    </select>
+                                    <span class="input-group-text w_8rem justify-content-center">سال</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-1" style="direction: ltr;">
+                                <select class="form-control">
+                                    <option value="1">مرد</option>
+                                    <option value="1">زن</option>
+                                    <option value="2">نامشخص</option>
+                                </select>
+                                <span class="input-group-text w_8rem justify-content-center">جنسیت</span>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-8 row px-0 mt-3">
+                            <label>آدرس:</label>
+                            <div class="col-12 col-md-4">
+                                <div class="input-group my-1" style="direction: ltr;">
+                                    <input type="text" class="form-control" placeholder="">
+                                    <span class="input-group-text w_8rem justify-content-center">کشور</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="input-group my-1" style="direction: ltr;">
+                                    <input type="text" class="form-control" placeholder="">
+                                    <span class="input-group-text w_8rem justify-content-center">استان</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="input-group my-1" style="direction: ltr;">
+                                    <input type="text" class="form-control" placeholder="">
+                                    <span class="input-group-text w_8rem justify-content-center">شهر</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8 mb-3">
+                            <div class="input-group my-1" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="خیابان - کوچه و ...">
+                                <span class="input-group-text w_8rem justify-content-center">ادامه آدرس</span>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-1" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="مثلا @qasem">
+                                <span class="input-group-text w_8rem justify-content-center">اینستاگرام</span>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-1" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="مثلا @qasem">
+                                <span class="input-group-text w_8rem justify-content-center">تلگرام</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-1" style="direction: ltr;">
+                                <input type="file" class="form-control" placeholder="تصویر">
+                                <span class="input-group-text justify-content-center">تصویر</span>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-8 col-md-6 col-lg-8 my-1">
+                            <div class="input-group mb-2" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="قسمتی از نقش مورد نظر را وارد کنید" list="roleLists">
+                                <span class="input-group-text w_8rem justify-content-center">نقش ها</span>
+                                <datalist id="roleLists">
+                                    <option value="نقش شماره 1">
+                                    <option value="نقش شماره 2">
+                                    <option value="نقش شماره 3">
+                                </datalist>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-8">
+                                <span class="chips_elem">
+                                    <i class="fas fa-times text-danger"></i>
+                                    نقش 1
+                                </span>
+                                <span class="chips_elem">
+                                    <i class="fas fa-times text-danger"></i>
+                                    نقش 2
+                                </span>
+                            </div>
+                        </div>
+                        <div class="btn_box text-center col-12 col-md-6 col-lg-8 mt-4">
+                            <button class="btn btn-primary ">ذخیره</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  #endregion  -->
+
+<!-- #region(collapsed) add role modal  -->
+<div class="modal fade" id="add_role_modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title flex-fill" id="exampleModalLabel">افزودن نقش</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="">
+                                <span class="input-group-text w_8rem justify-content-center">عنوان نقش</span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="">
+                                <span class="input-group-text w_8rem justify-content-center">توضیحات نقش</span>
+                            </div>
+                        </div>
+                        <div class="col-12 my-1 mb-3">
+                            <div class="input-group my-2" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="قسمتی از مجوز مورد نظر را وارد کنید" list="permissionsList">
+                                <span class="input-group-text w_8rem justify-content-center">دسترسی ها</span>
+                                <datalist id="permissionsList">
+                                    <option value="مجوز شماره 1">
+                                    <option value="مجوز شماره 2">
+                                    <option value="مجوز شماره 3">
+                                </datalist>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-8">
+                                <span class="chips_elem">
+                                    <i class="fas fa-times text-danger"></i>
+                                    مجوز 1
+                                </span>
+                                <span class="chips_elem">
+                                    <i class="fas fa-times text-danger"></i>
+                                    مجوز 2
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-12 my-2">
+                            <div class="form-check form-switch col-5 col-md-4">
+                                <input class="form-check-input pointer" type="checkbox" id="flexSwitchCheckDefault" checked>
+                                <label class="form-check-label pointer" for="flexSwitchCheckDefault">وضعیت : فعال</label>
+                            </div>
+                        </div>
+
+
+                        <div class="btn_box text-center col-12 col-md-6 col-lg-8 mt-4">
+                            <button class="btn btn-primary ">ذخیره</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  #endregion  -->
+
+<!-- #region(collapsed) add comment modal  -->
+<div class="modal fade" id="add_comment_modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title flex-fill" id="exampleModalLabel">افزودن نظر برای محصول</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <textarea rows="5" class="form-control"></textarea>
+                                <span class="input-group-text w_8rem justify-content-center">متن نظر</span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group my-2" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="قسمتی از نام محصول مورد نظر را وارد کنید" list="productList">
+                                <span class="input-group-text w_8rem justify-content-center">برای</span>
+                                <datalist id="productList">
+                                    <option value="محصول شماره 1">
+                                    <option value="محصول شماره 2">
+                                    <option value="محصول شماره 3">
+                                </datalist>
+                            </div>
+                        </div>
+                        <div class="btn_box text-center col-12 col-md-6 col-lg-8 mt-4">
+                            <button class="btn btn-primary ">ذخیره</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  #endregion  -->
+
+<!-- #region(collapsed) add questions modal  -->
+<div class="modal fade" id="add_question_modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title flex-fill" id="exampleModalLabel">افزودن سوال</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="form-check form-switch d-flex justify-content-center align-items-center p-0 h-100">
+                            <label class="form-check-label pointer" for="flexSwitchCheckDefault">سوال</label>
+                            <input class="form-check-input pointer mx-3" type="checkbox" id="flexSwitchCheckDefault">
+                            <label class="form-check-label pointer" for="flexSwitchCheckDefault">پاسخ</label>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <textarea rows="5" class="form-control"></textarea>
+                                <span class="input-group-text w_8rem justify-content-center">متن سوال</span>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3" style="direction: ltr;">
+                            <span class="input-group-text justify-content-center">
+                                <i class="fas fa-plus text-success hoverable_text pointer"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="قسمتی از نام گروه را وارد کنید" list="questionGroupList">
+                            <span class="input-group-text w_8rem justify-content-center">گروه</span>
+                            <datalist id="questionGroupList">
+                                <option value="گروه 1">
+                                <option value="گروه 2">
+                                <option value="گروه 3">
+                            </datalist>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group my-2" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="آی دی سوال مورد نظر را وارد کنید" list="questionsList">
+                                <span class="input-group-text w_8rem justify-content-center">انتخاب سوال</span>
+                                <datalist id="questionsList">
+                                    <option value="سوال شماره 1">
+                                    <option value="سوال شماره 2">
+                                    <option value="سوال شماره 3">
+                                </datalist>
+                            </div>
+                        </div>
+                        <div class="btn_box text-center col-12 col-md-6 col-lg-8 mt-4">
+                            <button class="btn btn-primary ">ذخیره</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  #endregion  -->
